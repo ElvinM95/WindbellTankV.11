@@ -89,10 +89,8 @@ namespace WindbellTank.Services
                     }
                 }
             }
-            
-            // Windbell device requires Little-Endian format for CRC
-            byte[] crcBytes = BitConverter.GetBytes(crc);
-            return BitConverter.ToString(crcBytes).Replace("-", " ").ToLower();
+            // Bu hissə imzanı cihazın ekranında gördüyümüz '3301' formatına salır
+            return crc.ToString("x4"); 
         }
 
         /// <summary>

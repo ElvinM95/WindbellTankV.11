@@ -50,7 +50,7 @@ namespace WindbellTank.Services
         {
             var options = new JsonSerializerOptions 
             { 
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                PropertyNamingPolicy = null, //kohne versiya-JsonNamingPolicy.CamelCase,
                 WriteIndented = false
             };
 

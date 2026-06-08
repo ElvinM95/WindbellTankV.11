@@ -1,0 +1,274 @@
+[
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetDensityData",
+    "RelativePath": "deviceAPI/getDensityData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetGasSetData",
+    "RelativePath": "deviceAPI/getGasSetData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetOilData",
+    "RelativePath": "deviceAPI/getOilData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetProbeData",
+    "RelativePath": "deviceAPI/getProbeData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetSensorSetData",
+    "RelativePath": "deviceAPI/getSensorSetData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetSysVersionData",
+    "RelativePath": "deviceAPI/getSysVersionData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetTankData",
+    "RelativePath": "deviceAPI/getTankData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "GetTankVolData",
+    "RelativePath": "deviceAPI/getTankVolData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadAlarmData",
+    "RelativePath": "deviceAPI/uploadAtgAlarmData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadAtgData",
+    "RelativePath": "deviceAPI/uploadAtgData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadDensityData",
+    "RelativePath": "deviceAPI/uploadDensityData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadDeviceAlarmData",
+    "RelativePath": "deviceAPI/uploadDeviceAlarmData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadGasSetData",
+    "RelativePath": "deviceAPI/uploadGasSetData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadOilData",
+    "RelativePath": "deviceAPI/uploadOilData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadProbeData",
+    "RelativePath": "deviceAPI/uploadProbeData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadSensorData",
+    "RelativePath": "deviceAPI/uploadSensorData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WindbellTank.Controllers.DeviceApiController",
+    "Method": "UploadTankData",
+    "RelativePath": "deviceAPI/uploadTankData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

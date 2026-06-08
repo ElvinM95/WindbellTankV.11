@@ -163,7 +163,7 @@ namespace WindbellTank.Services
         /// </summary>
         public async Task<string> UploadOilProductDataAsync(object oilData)
         {
-            return await PostAsync("/deviceAPI/uploadOilData", oilData, 0); 
+            return await PostAsync("/deviceAPI/uploadOilData", oilData, 8); 
         }
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace WindbellTank.Services
         /// </summary>
         public async Task<string> UploadDensityDataAsync(object densityData)
         {
-            return await PostAsync("/deviceAPI/uploadDensityData", densityData, 0); 
+            return await PostAsync("/deviceAPI/uploadDensityData", densityData, 18); 
         }
 
         /// <summary>
@@ -179,7 +179,7 @@ namespace WindbellTank.Services
         /// </summary>
         public async Task<string> UploadGasSensorDataAsync(object gasSensorData)
         {
-            return await PostAsync("/deviceAPI/uploadGasSensorData", gasSensorData, 0); 
+            return await PostAsync("/deviceAPI/uploadGasSensorData", gasSensorData, 22); 
         }
     }
 }

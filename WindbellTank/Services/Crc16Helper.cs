@@ -90,7 +90,12 @@ namespace WindbellTank.Services
                 }
             }
             // Bu hissə imzanı cihazın ekranında gördüyümüz '3301' formatına salır
-            return crc.ToString("x4"); 
+            // BU HİSSƏ ƏN VACİBDİR:
+            // Baytların yerini fırladırıq (Byte Swap), çünki log göstərir ki, 
+            // cihaz '99af' yox, 'af99' formatında (Big-Endian) imza gözləyir.
+            ushort swappedCrc = (ushort)((crc << 8) | (crc >> 8));
+            
+            return swappedCrc.ToString("x4");
         }
 
         /// <summary>

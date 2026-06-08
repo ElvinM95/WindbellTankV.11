@@ -28,20 +28,6 @@ namespace WindbellTank.Services
         private object GenerateToken(string dataJson)
         {
             string appIdForToken = _store.AppId;
-            try
-            {
-                using JsonDocument tempDoc = JsonDocument.Parse(dataJson);
-                if (tempDoc.RootElement.TryGetProperty("iotDevID", out var iotDevIdEl) && iotDevIdEl.ValueKind == JsonValueKind.String)
-                {
-                    string parsedId = iotDevIdEl.GetString();
-                    if (!string.IsNullOrWhiteSpace(parsedId))
-                    {
-                        appIdForToken = parsedId;
-                        _store.AppId = appIdForToken;
-                    }
-                }
-            }
-            catch { }
 
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             // Crc16Helper ilə boşluqları düzgün silirik (string dəyərlərin içindəki boşluqları qoruyaraq)
@@ -71,20 +57,6 @@ namespace WindbellTank.Services
             string dataJson = JsonSerializer.Serialize(data, options);
             
             string appIdForToken = _store.AppId;
-            try
-            {
-                using JsonDocument tempDoc = JsonDocument.Parse(dataJson);
-                if (tempDoc.RootElement.TryGetProperty("iotDevID", out var iotDevIdEl) && iotDevIdEl.ValueKind == JsonValueKind.String)
-                {
-                    string parsedId = iotDevIdEl.GetString();
-                    if (!string.IsNullOrWhiteSpace(parsedId))
-                    {
-                        appIdForToken = parsedId;
-                        _store.AppId = appIdForToken;
-                    }
-                }
-            }
-            catch { }
             
             // Cihaz token içində `timestamp` olaraq UNIX Timestamp (saniyə) gözləyir
             long timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();

@@ -72,8 +72,8 @@ namespace WindbellTank.Services
             
             var payload = new
             {
+                data = data,
                 token = tokenBlock,
-                data = data
             };
 
             string payloadJson = JsonSerializer.Serialize(payload, options);

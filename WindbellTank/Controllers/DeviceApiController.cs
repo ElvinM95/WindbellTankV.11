@@ -735,12 +735,7 @@ namespace WindbellTank.Controllers
                 if (body.TryGetProperty("token", out JsonElement tokenEl))
                 {
                     string appId = GetStr(tokenEl, "appId");
-                    if (appId != "-" && !string.IsNullOrEmpty(appId))
-                    {
-                        _lastKnownAppId = appId;
-                        _store.AppId = appId;
-                        _store.SetAppId(appId);
-                    }
+
                     string time = GetStr(tokenEl, "time");
                     if (time == "-") time = GetStr(tokenEl, "timestamp");
                     string sign = GetStr(tokenEl, "sign");

@@ -106,11 +106,10 @@ namespace WindbellTank.Services
                         new
                         {
                             tankNo = tank.TankNo,
-                            tankVer = int.Parse(tank.Version), // Vacib: Versiya göndərilməlidir
+                            tankVer = tank.Version, // Vacib: Versiya göndərilməlidir
                             diameter = tank.DiameterMm.ToString(), // Vacib: Rəqəm yox, String olmalıdır
                             volume = tank.VolumeLiters.ToString(), // Vacib: String olmalıdır
-                            used = tank.Enabled ? "1" : "0",
-                            remark = ""
+                            used = tank.Enabled ? "1" : "0"
                         }
                     }
                 };
@@ -220,7 +219,7 @@ namespace WindbellTank.Services
                         {
                             tankNo = probe.TankNo,
                             probeId = probe.ProbeId,
-                            probeVer = int.Parse(probe.Version), // Vacib: Versiya göndərilməlidir
+                            probeVer = probe.Version, // Vacib: Versiya göndərilməlidir
                             probeType = probe.IsDensityProbe ? "1" : "0",
                             oilOffset = probe.OilOffsetMm.ToString("F1", CultureInfo.InvariantCulture),
                             waterOffset = probe.WaterOffsetMm.ToString("F1", CultureInfo.InvariantCulture),

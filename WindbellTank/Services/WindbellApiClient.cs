@@ -60,7 +60,7 @@ namespace WindbellTank.Services
             string appIdForToken = _store.AppId;
             
             // Cihaz token içində `timestamp` olaraq UNIX Timestamp (saniyə) gözləyir
-            long timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            long timestamp = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
             string dataWithoutSpaces = Crc16Helper.RemoveFormattingSpaces(dataJson);
             string sign = Crc16Helper.CalculateModbusCrc16(dataWithoutSpaces);
 

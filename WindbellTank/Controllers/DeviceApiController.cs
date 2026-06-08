@@ -44,13 +44,6 @@ namespace WindbellTank.Controllers
             
             BackgroundLogger.Log($"[HEARTBEAT] Cihaz: {iotDevId} (IP: {deviceIp})", ConsoleColor.DarkGray);
 
-            // Dinamik AppId — cihazın iotDevID-sini avtomatik öyrənirik
-            if (iotDevId != "unknown" && !string.IsNullOrEmpty(iotDevId))
-            {
-                _store.AppId = iotDevId;
-                _store.SetAppId(iotDevId);
-            }
-
             // Cihaz versiyalarını müqayisə et və loqla
             // Windbell protokolu push əsaslıdır: versiya fərqi olanda cihaz özü upload* endpointlərini çağırır
             CompareVersionsAndLog(body);

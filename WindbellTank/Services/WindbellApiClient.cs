@@ -25,23 +25,24 @@ namespace WindbellTank.Services
         /// Request üçün token yaradır.
         /// Crc16Helper istifadə olunur — imza kiçik hərflərlə, Little-Endian HEX formatında olur.
         /// </summary>
-        private object GenerateToken(string dataJson)
-        {
-            string appIdForToken = _store.AppId;
+        /// 
+        // private object GenerateToken(string dataJson)
+        // {
+        //     string appIdForToken = _store.AppId;
 
-            string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            // Crc16Helper ilə boşluqları düzgün silirik (string dəyərlərin içindəki boşluqları qoruyaraq)
-            string dataWithoutSpaces = Crc16Helper.RemoveFormattingSpaces(dataJson);
-            // Kiçik hərfli, Little-Endian HEX formatında CRC16 imza
-            string sign = Crc16Helper.CalculateModbusCrc16(dataWithoutSpaces);
+        //     string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        //     // Crc16Helper ilə boşluqları düzgün silirik (string dəyərlərin içindəki boşluqları qoruyaraq)
+        //     string dataWithoutSpaces = Crc16Helper.RemoveFormattingSpaces(dataJson);
+        //     // Kiçik hərfli, Little-Endian HEX formatında CRC16 imza
+        //     string sign = Crc16Helper.CalculateModbusCrc16(dataWithoutSpaces);
 
-            return new
-            {
-                appId = appIdForToken,
-                timestamp = timestamp,
-                sign = sign
-            };
-        }
+        //     return new
+        //     {
+        //         appId = appIdForToken,
+        //         timestamp = timestamp,
+        //         sign = sign
+        //     };
+        // }
 
         /// <summary>
         /// Ümumi POST metodu

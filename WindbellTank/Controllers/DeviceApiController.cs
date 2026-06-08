@@ -133,9 +133,12 @@ namespace WindbellTank.Controllers
                 tankNo        = t.TankNo,
                 oilCode       = t.OilCode,
                 oilName       = t.OilName,
+                oilColor = "1", // Mütləqdir: (1=yaşıl, 2=qırmızı və s. - default 1 qoya bilərsən)
+                oilRate       = t.ExpansionRate,   // "0.0012" benzin
+                temperature = "20.0", // Mütləqdir: Standart hesablama temperaturu
+                weightDensity = "0.0", // Mütləqdir: Çəki sıxlığı
                 diameter      = t.DiameterMm.ToString(System.Globalization.CultureInfo.InvariantCulture),
                 volume        = t.VolumeLiters.ToString(System.Globalization.CultureInfo.InvariantCulture),
-                oilRate       = t.ExpansionRate,   // "0.0012" benzin
                 used          = t.Enabled ? "1" : "0"
             }).ToList();
 

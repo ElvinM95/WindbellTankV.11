@@ -106,7 +106,7 @@ namespace WindbellTank.Services
                         new
                         {
                             tankNo = tank.TankNo,
-                            tankVer = tank.Version, // Vacib: Versiya göndərilməlidir
+                            tankVer = int.Parse(tank.Version), // Vacib: Versiya göndərilməlidir
                             diameter = tank.DiameterMm.ToString(), // Vacib: Rəqəm yox, String olmalıdır
                             volume = tank.VolumeLiters.ToString(), // Vacib: String olmalıdır
                             used = tank.Enabled ? "1" : "0"

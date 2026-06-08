@@ -18,6 +18,7 @@ namespace WindbellTank.Services
 
         // Cihazın iotDevID-si (heartbeat-dən dinamik öyrənilir)
         public string AppId { get; set; } = "2343554";
+        public string DeviceId { get; set; } = "unknown"; // Bu isə cihazın öz nömrəsidir (Dinamik olacaq)
 
         // İlk heartbeat gəlməsini gözləmək üçün siqnal
         private readonly TaskCompletionSource<bool> _appIdReady = new(TaskCreationOptions.RunContinuationsAsynchronously);

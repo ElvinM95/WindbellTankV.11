@@ -99,7 +99,8 @@ namespace WindbellTank.Services
 
                 var requestData = new
                 {
-                    iotDevID = store.AppId,
+                    // İndi (Dinamik):
+                    iotDevID = store.DeviceId, 
                     tankList = new[]
                     {
                         new
@@ -210,7 +211,8 @@ namespace WindbellTank.Services
 
                 var requestData = new
                 {
-                    iotDevID = store.AppId,
+                    // İndi (Dinamik):
+                    iotDevID = store.DeviceId,
                     probeList = new[]
                     {
                         new
